@@ -87,11 +87,11 @@ export default {
       order_desc: "",
       BACKEND_URL: "http://127.0.0.1:5000/",
       cashfree: null,
-      AppId: "TEST10220205bf31035d5ee4ad44736b50202201",
-      SecretKey: "cfsk_ma_test_f109289fc54a49205bad9700276d27de_a7386657",
+      AppId: "", // Pass here your cash free app id
+      SecretKey: "", // Pass here your cash free secret key here
       BaseUrl: "https://sandbox.cashfree.com/pg/orders", // For Testing
       // BaseUrl: 'https://api.cashfree.com/pg/orders',  // For Production
-      ReturnUrl: "http://localhost:5173/result",
+      ReturnUrl: "", // Pass here your return page url of your project eg. http://localhost:1234/result
     };
   },
   methods: {
@@ -153,7 +153,7 @@ export default {
   },
   async mounted() {
     try {
-      this.cashfree = await load({ mode: "sandbox" });
+      this.cashfree = await load({ mode: "sandbox" }); // Change mode here as per your need of use for testing "sandbox", for prodction "production"
     } catch (error) {
       console.log("Error initializing Cashfree:", error);
     }
