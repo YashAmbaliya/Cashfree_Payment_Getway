@@ -28,8 +28,8 @@ export default {
       failedPayment: false,
       order_id: null,
       BACKEND_URL: "http://127.0.0.1:5000/",
-      AppId: "TEST10220205bf31035d5ee4ad44736b50202201",
-      SecretKey: "cfsk_ma_test_f109289fc54a49205bad9700276d27de_a7386657",
+      AppId: "", // Pass here your cash free app id
+      SecretKey: "", // Pass here your cash free secret key here
       BaseUrl: "https://sandbox.cashfree.com/pg/orders", // For Testing
       // BaseUrl: 'https://api.cashfree.com/pg/orders',  // For Production
     };
