@@ -6,8 +6,8 @@ const port = 5000;
 const cors = require("cors");
 const axios = require("axios");
 
-// const APP_ID = "TEST10220205bf31035d5ee4ad44736b50202201";
-// const SECRET_KEY = "cfsk_ma_test_f109289fc54a49205bad9700276d27de_a7386657";
+// const APP_ID = "";
+// const SECRET_KEY = "";
 
 //  For Testing
 // const BASE_URL = "https://sandbox.cashfree.com/pg/orders";
